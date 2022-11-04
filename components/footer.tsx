@@ -6,7 +6,7 @@ export default function Footer() {
   // console.log(router.asPath);
   return (
     <footer className='w-full mt-20 mx-auto max-w-5xl bg-red-200 bottom-0 relative'>
-      <div className='grid grid-cols-1 sm:grid-cols-6'>
+      <div className='grid grid-cols-1 sm:grid-cols-6 gap-5 sm:gap-0'>
         <section className='sm:col-span-2 bg-green-100'>
           <div className=''>logo</div>
         </section>
@@ -24,8 +24,9 @@ export default function Footer() {
           <div className=''>Banten 15227</div>
         </section>
       </div>
-      <div className='text-center bg-blue-100'>
-        &copy; CV {new Date().getFullYear()} ASRIYASA WYATA MANDIRI. All Right Reserved.
+      <div className='text-center bg-blue-100 mt-5 sm:mt-0 text-sm sm:text-base flex flex-col sm:flex-row'>
+        <div>&copy; CV {new Date().getFullYear()} ASRIYASA WYATA MANDIRI.</div>
+        <div>All Right Reserved.</div>
       </div>
     </footer>
   );
